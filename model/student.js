@@ -8,6 +8,8 @@ const studentsschema=new mongoose.Schema({
     Name:String,
     age:Number,
     course:String,
+    image1:{data:Buffer,
+    contentType:String}
 
 });
 var studentmodel=mongoose.model("student",studentsschema)
